@@ -270,12 +270,12 @@ h2 {
 
 .shot {
   margin: 0;
-  max-width: 760px;
+  max-width: 720px;
   width: 100%;
-  background: var(--card);
+  background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 10px;
+  border-radius: 18px;
+  padding: 28px;
   box-shadow: var(--shadow-lg);
 }
 
@@ -283,8 +283,13 @@ h2 {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 9px;
+  border-radius: 10px;
   border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 720px) {
+  .shot { padding: 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
