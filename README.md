@@ -1,6 +1,6 @@
-# Coffee Home
+# Meet for Coffee
 
-Static public website for the Coffee Home Google Meet add-on.
+Static public website for the Meet for Coffee Google Meet add-on.
 
 The site includes the public homepage, privacy policy, terms of service, and support pages needed for Google OAuth and Google Workspace Marketplace review. Deployment is handled by GitHub Pages on every push to `main`.
 
