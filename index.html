@@ -3,14 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Coffee Home is a Google Meet add-on for lightweight meeting notes and follow-up prompts.">
-    <title>Coffee Home</title>
+    <meta name="description" content="Coffee Home is a Google Meet add-on for lightweight meeting notes, shared agenda topics, and follow-up reminders right inside your call.">
+    <meta name="theme-color" content="#2f6f55">
+    <meta property="og:title" content="Coffee Home — a calmer way to run meetings in Google Meet">
+    <meta property="og:description" content="Capture agenda topics, notes, votes, and follow-ups without leaving your Google Meet call.">
+    <meta property="og:type" content="website">
+    <title>Coffee Home — Meeting notes &amp; agendas inside Google Meet</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232f6f55'/%3E%3Cpath d='M9 12h11a4 4 0 0 1 0 8h-1.2A6 6 0 0 1 13 24h0a6 6 0 0 1-6-6v-5a1 1 0 0 1 1-1h1zm11 2v4a2 2 0 0 0 0-4z' fill='%23fff'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="./" aria-label="Coffee Home home">
-        <span class="logo" aria-hidden="true">CH</span>
+        <span class="logo" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 12h11a4 4 0 0 1 0 8h-1.2A6 6 0 0 1 13 24a6 6 0 0 1-6-6v-5a1 1 0 0 1 1-1h1zm11 2v4a2 2 0 0 0 0-4z" fill="currentColor"/>
+            <path d="M11 6c0 1.2-1 1.2-1 2.4M15 6c0 1.2-1 1.2-1 2.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </span>
         <span>Coffee Home</span>
       </a>
       <nav aria-label="Primary navigation">
@@ -24,34 +34,106 @@
       <section class="hero">
         <div>
           <p class="eyebrow">Google Meet add-on</p>
-          <h1>Coffee Home</h1>
-          <p class="lede">Coffee Home is a Google Meet add-on that helps users keep lightweight meeting notes, shared prompts, and follow-up reminders close at hand during calls.</p>
+          <h1>Run meetings that <span class="accent">actually move</span>.</h1>
+          <p class="lede">Coffee Home is a Google Meet add-on for lightweight meeting notes, shared agenda topics, quick votes, and follow-up reminders — all in the Meet sidebar, so the conversation never leaves the call.</p>
           <div class="actions" aria-label="Primary actions">
-            <a class="button primary" href="./support/#installation">Install from Google Workspace Marketplace</a>
-            <a class="button secondary" href="./support/#using-the-meet-add-on">Sign in / Open app</a>
+            <a class="button primary" href="./support/#installation">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 4v10m0 0 4-4m-4 4-4-4M5 19h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Add to Google Workspace
+            </a>
+            <a class="button secondary" href="./support/#using-the-meet-add-on">See how it works</a>
+          </div>
+          <p class="trust">Free to install · Opens in the Meet sidebar · No data sold, ever.</p>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="board">
+            <div class="board-bar">
+              <i></i><i></i><i></i>
+              <span>Today's board</span>
+            </div>
+            <div class="cols">
+              <div class="col">
+                <h4>To discuss</h4>
+                <div class="note warm">Retro action items<span class="votes">▲ 5</span></div>
+                <div class="note">Roadmap Q3</div>
+              </div>
+              <div class="col">
+                <h4>Discussing</h4>
+                <div class="note cool">Onboarding flow<span class="votes">▲ 8</span></div>
+              </div>
+              <div class="col">
+                <h4>Done</h4>
+                <div class="note">Hiring update</div>
+                <div class="note">Budget sign-off</div>
+              </div>
+            </div>
+          </div>
+          <span class="float-pill">3 follow-ups captured</span>
+        </div>
+      </section>
+
+      <section class="content-grid" aria-label="Features">
+        <article>
+          <div class="feat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 5h16M4 12h16M4 19h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h2>Shared agenda topics</h2>
+          <p>Drop topics on a shared board before and during the call, then work the list together so nothing important gets skipped.</p>
+        </article>
+        <article>
+          <div class="feat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 14l3-3 4 4 3-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 19h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h2>Quick votes &amp; notes</h2>
+          <p>Let the group upvote what matters most and capture lightweight notes as the discussion happens — no second tool, no tab switching.</p>
+        </article>
+        <article>
+          <div class="feat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 11l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h2>Follow-up reminders</h2>
+          <p>Turn decisions into clear follow-ups so everyone leaves the meeting knowing exactly what happens next.</p>
+        </article>
+      </section>
+
+      <section class="section" aria-labelledby="how-it-works">
+        <div class="section-head">
+          <h2 id="how-it-works">Up and running in three steps</h2>
+          <p>No setup project, no migration — install it and open it in your next call.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h3>Install the add-on</h3>
+            <p>Add Coffee Home from the Google Workspace Marketplace for yourself or your whole team.</p>
+          </div>
+          <div class="step">
+            <h3>Open it in Meet</h3>
+            <p>Launch Coffee Home from the Google Meet sidebar during any meeting and sign in with your Google account.</p>
+          </div>
+          <div class="step">
+            <h3>Run a tighter meeting</h3>
+            <p>Capture topics, notes, votes, and follow-ups together — right where the conversation is happening.</p>
           </div>
         </div>
       </section>
 
-      <section class="content-grid" aria-labelledby="how-it-works">
-        <article>
-          <h2 id="how-it-works">How it works</h2>
-          <ol>
-            <li>Install the add-on from Google Workspace Marketplace.</li>
-            <li>Open it from the Google Meet sidebar during a meeting.</li>
-            <li>Sign in and use Coffee Home to capture notes, prompts, and follow-up reminders.</li>
-          </ol>
-        </article>
-        <article>
-          <h2>What Google data it uses</h2>
-          <p>Coffee Home requests access to basic Google account identifiers, including name, email address, and profile image, solely to authenticate users and show the correct workspace inside the Meet add-on.</p>
-          <p>Coffee Home does not sell Google user data or use it for advertising.</p>
-        </article>
+      <section class="plain-section" aria-labelledby="about">
+        <h2 id="about">Built for teams who want meetings to count</h2>
+        <p>Coffee Home gives teams a shared, in-call home for agendas, notes, and action items — a calm meeting companion instead of a scattered pile of docs and chat messages. It keeps the focus on the discussion, helps quieter voices surface topics with a vote, and makes sure decisions leave the room as concrete next steps.</p>
+        <p class="data-note">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Coffee Home requests only basic Google account identifiers — name, email, and profile image — to sign you in and load the right workspace. It never sells Google user data or uses it for advertising.</span>
+        </p>
       </section>
 
-      <section class="plain-section" aria-labelledby="about">
-        <h2 id="about">About Coffee Home</h2>
-        <p>Coffee Home provides a simple meeting companion for teams that want a shared place for agendas, notes, and action items while they collaborate in Google Meet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <section class="cta" aria-labelledby="cta-title">
+        <h2 id="cta-title">Bring Coffee Home to your next meeting</h2>
+        <p>Install in a minute and open it from the Meet sidebar on your very next call.</p>
+        <div class="actions" style="justify-content:center">
+          <a class="button primary" href="./support/#installation">Add to Google Workspace</a>
+          <a class="button secondary" href="./support/">Visit support</a>
+        </div>
       </section>
     </main>
 
