@@ -6,14 +6,9 @@
     <meta name="description" content="Meet for Coffee support and setup help.">
     <link rel="canonical" href="https://start.coffee/support/">
     <title>Support | Meet for Coffee</title>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDNVDPG5RC"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-ZDNVDPG5RC');
+    <script type="module">
+      import { installSiteAnalytics } from "../assets/analytics.mjs?v=3.3.3";
+      installSiteAnalytics();
     </script>
     <link rel="stylesheet" href="../styles.css?v=20261019">
   </head>
