@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Meet for Coffee privacy policy.">
+    <link rel="canonical" href="https://start.coffee/privacy/">
     <title>Privacy Policy | Meet for Coffee</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDNVDPG5RC"></script>
@@ -28,6 +29,7 @@
         <span>Meet for Coffee</span>
       </a>
       <nav aria-label="Primary navigation">
+        <a href="https://app.start.coffee/">Open app</a>
         <a href="../privacy/" aria-current="page">Privacy</a>
         <a href="../terms/">Terms</a>
         <a href="../support/">Support</a>
@@ -37,30 +39,34 @@
     <main class="policy">
       <h1>Privacy Policy</h1>
       <p><strong>Effective date:</strong> June 18, 2026</p>
-      <p><strong>Last updated:</strong> June 18, 2026</p>
+      <p><strong>Last updated:</strong> October 19, 2026</p>
 
       <h2>1. Who operates the service</h2>
       <p>Meet for Coffee is provided by the Build It Faster project, based in the United States. Contact us at <a href="mailto:support@bif.dev">support@bif.dev</a>.</p>
 
+      <p>This policy covers the public site at <a href="https://start.coffee/">start.coffee</a>, the standalone web app at <a href="https://app.start.coffee/">app.start.coffee</a>, and the Google Meet add-on. The app connects through an automatically created guest session. No separate Google sign-in is required. The Google Meet integration also uses meeting and activity context to connect people to the same board.</p>
+
       <h2>2. Information collected</h2>
       <ul>
-        <li>Account information, such as name and email address.</li>
-        <li>Google account identifiers, such as Google user ID and profile image.</li>
+        <li>Information you provide when contacting support, such as your email address and message.</li>
+        <li>Your chosen display name, and a display name or avatar if supplied by the Meet integration.</li>
         <li>Google Meet add-on context needed to display the app during a meeting.</li>
-        <li>Meeting content that users enter into the add-on, such as agenda topics, notes, and votes, which is shared peer-to-peer with meeting participants during the call.</li>
+        <li>Board content, such as agenda topics, notes, and votes. This content is encrypted in participants’ browsers and sent through InstantDB to other participants during the session.</li>
+        <li>Guest authentication identifiers and live presence details, including display names and randomly generated connection identifiers, processed by InstantDB to connect participants.</li>
         <li>Usage analytics, such as page views, feature interactions, approximate location, browser, and device information.</li>
         <li>Limited technical logs, such as IP address, device, browser, and diagnostic data.</li>
       </ul>
 
-      <h2>3. Google user data</h2>
-      <p>Meet for Coffee accesses basic Google account identifiers, including name, email address, profile image, and Google user ID, to authenticate users and display the add-on in the Google Meet sidebar. Meet for Coffee may access Google Meet add-on context solely to render the in-meeting experience.</p>
-      <p>Meeting content entered into the add-on is shared peer-to-peer with meeting participants during the call and is not intended to be stored by the Build It Faster project. Account identifiers and limited technical logs may be retained as needed to operate, secure, debug, and support the service. Google user data is not shared with advertisers or sold. Users can request deletion by emailing <a href="mailto:support@bif.dev">support@bif.dev</a>.</p>
+      <h2>3. Google Meet context and board content</h2>
+      <p>The Meet add-on uses the meeting ID and activity starting information to connect participants to the same board. It derives an opaque room identifier from the meeting context. A display name or avatar supplied to the integration may be shown in the panel. Board access uses an InstantDB guest session rather than a separate Google account login.</p>
+      <p>Board content is encrypted before it leaves your browser. InstantDB passes encrypted updates between participants; it does not receive readable board content or save a board history. Display names, connection identifiers, and message metadata are separate from the encrypted content and are visible to InstantDB. Guest identifiers, support correspondence, and limited technical logs may be retained as needed to operate, secure, debug, and support the service. Google user data is not shared with advertisers or sold. Users can request deletion by emailing <a href="mailto:support@bif.dev">support@bif.dev</a>.</p>
       <p>Meet for Coffee's use and transfer of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements.</p>
 
       <h2>4. How information is used</h2>
-      <p>We use information to provide the Meet add-on, authenticate users, enable peer-to-peer meeting collaboration, respond to support requests, maintain security, debug issues, and improve reliability.</p>
+      <p>We use information to provide the web app and Meet add-on, authenticate users where needed, sync encrypted board updates between participants, respond to support requests, maintain security, debug issues, and improve reliability.</p>
 
       <h2>5. Data sharing and subprocessors</h2>
+      <p>We use InstantDB for guest authentication, live participant presence, and delivery of encrypted board updates. Board updates are sent as live messages, rather than saved database records. Participants’ browsers hold the board and supply its current state to people joining the session.</p>
       <p>We may share data with service providers that host the application, process support requests, or provide security and diagnostics. These providers may process data only as needed to deliver services for Meet for Coffee.</p>
 
       <h2>6. Analytics</h2>
@@ -68,13 +74,13 @@
       <p>Google explains how it uses information from sites and apps that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
       <h2>7. Data retention and deletion</h2>
-      <p>Account data may be retained while the account is active. Technical logs are retained for a limited period needed for security, debugging, and compliance. Meeting content shared peer-to-peer during a call is not intended to be retained by the Build It Faster project. Users may request account and data deletion by contacting support.</p>
+      <p>Guest authentication records and support correspondence may be retained as needed to operate and support the service. Technical logs are retained for a limited period needed for security, debugging, and compliance. Boards are held in participants’ browsers and are not saved as a server-side history. Once everyone closes the board, it cannot be recovered from the service. Copy the board as Markdown before leaving if you need a record. Display names and session identity details may also be kept in browser storage; these are separate from board content. Users may request account and data deletion by contacting support.</p>
 
       <h2>8. Security measures</h2>
       <p>We use HTTPS, access controls, least-privilege permissions, logging, and operational review practices designed to protect user data.</p>
 
       <h2>9. User choices and rights</h2>
-      <p>Users may update account information, revoke Google authorization from their Google account, export meeting content from the add-on where supported, or request access, correction, export, or deletion by contacting support.</p>
+      <p>You can export a board as Markdown, clear browser storage to remove locally saved display names and guest sessions, or uninstall the Meet add-on. Contact support to request access, correction, or deletion of information retained about you. Support cannot recover a board after all participants have left.</p>
 
       <h2>10. Children's privacy</h2>
       <p>Meet for Coffee is not directed to children under 13, and we do not knowingly collect personal information from children under 13.</p>
