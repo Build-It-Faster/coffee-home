@@ -6,14 +6,9 @@
     <meta name="description" content="Meet for Coffee privacy policy.">
     <link rel="canonical" href="https://start.coffee/privacy/">
     <title>Privacy Policy | Meet for Coffee</title>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDNVDPG5RC"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-ZDNVDPG5RC');
+    <script type="module">
+      import { installSiteAnalytics } from "../assets/analytics.mjs?v=3.3.3";
+      installSiteAnalytics();
     </script>
     <link rel="stylesheet" href="../styles.css?v=20261019">
   </head>
@@ -53,7 +48,7 @@
         <li>Google Meet add-on context needed to display the app during a meeting.</li>
         <li>Board content, such as agenda topics, notes, and votes. This content is encrypted in participants’ browsers and sent through InstantDB to other participants during the session.</li>
         <li>Guest authentication identifiers and live presence details, including display names and randomly generated connection identifiers, processed by InstantDB to connect participants.</li>
-        <li>Usage analytics, such as page views, feature interactions, approximate location, browser, and device information.</li>
+        <li>Usage analytics, such as visits to fixed page categories, approximate location, browser, and device information.</li>
         <li>Limited technical logs, such as IP address, device, browser, and diagnostic data.</li>
       </ul>
 
@@ -70,7 +65,9 @@
       <p>We may share data with service providers that host the application, process support requests, or provide security and diagnostics. These providers may process data only as needed to deliver services for Meet for Coffee.</p>
 
       <h2>6. Analytics</h2>
-      <p>We may use Google Analytics or similar tools to understand how people find and use Meet for Coffee. Analytics tools may use cookies or similar technologies and may collect usage events, device and browser information, approximate location, and interaction data. We do not intentionally send names, email addresses, meeting content, or other directly identifying user content to Google Analytics. We do not use analytics data for advertising or remarketing.</p>
+      <p>We use Google Analytics to count visits to fixed page categories, such as the homepage, privacy, terms, and support pages. The website and app use separate analytics properties. Before sending a page view, we remove query parameters, invite details, dynamic paths and fragments, page titles, and incoming referrers. We send a fixed site title instead. We do not send board content, names, email addresses, or profile information to analytics.
+      </p>
+      <p>Google Analytics receives technical information such as browser and device details and approximate location, and may use cookies or similar identifiers. Automatic enhanced measurement and Google signals are disabled. We do not configure user IDs or cross-site identity linking, or use analytics for advertising or remarketing.</p>
       <p>Google explains how it uses information from sites and apps that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
       <h2>7. Data retention and deletion</h2>
